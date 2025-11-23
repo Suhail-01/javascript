@@ -137,6 +137,12 @@
 
 
 
-setTimeout(function(){
-    alert("hello world")
-},3000)
+var hello = "iam hello";
+var h1 = document.querySelector("h1");
+var btn = document.querySelector("button");
+btn.addEventListener("click",function(){
+    console.log("btn is click");
+    setTimeout(function(){
+        h1.innerHTML="iam changed hello"
+    },2000)
+})
