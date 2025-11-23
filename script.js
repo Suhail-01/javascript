@@ -136,13 +136,12 @@
 
 
 
-
-var hello = "iam hello";
-var h1 = document.querySelector("h1");
-var btn = document.querySelector("button");
-btn.addEventListener("click",function(){
-    console.log("btn is click");
-    setTimeout(function(){
-        h1.innerHTML="iam changed hello"
-    },2000)
-})
+// settimeout and setintervals and clearintervals ka best example 
+// var a = 0;
+// var int = setInterval(() =>{
+//     a++
+//     console.log(a);
+// },100);
+// setTimeout(()=>{
+//     clearInterval(int)
+// },5000);
