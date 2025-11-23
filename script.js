@@ -122,9 +122,21 @@
 //     }
 // })
 
-var hello
-hello();
-hello = function (params) {
-    console.log("hello");
+// var hello
+// hello();
+// hello = function (params) {
+//     console.log("hello");
     
-}
+// }
+
+
+
+
+
+
+
+
+
+setTimeout(function(){
+    alert("hello world")
+},3000)
