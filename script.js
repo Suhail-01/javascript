@@ -154,3 +154,30 @@
 
 
 
+let users = [
+  {
+    name: "Suhail",
+    age: 21,
+    profession: "AI Engineer"
+  },
+  {
+    name: "Aisha",
+    age: 25,
+    profession: "Web Developer"
+  },
+  {
+    name: "Rahul",
+    age: 28,
+    profession: "Data Analyst"
+  },
+  {
+    name: "Zara",
+    age: 22,
+    profession: "Designer"
+  }
+];
+let sum = '';
+users.forEach(function(user){
+    sum+= `name:${user.name},age:${user.age},profession:${user.profession}\n`
+});
+console.log(sum);
