@@ -154,30 +154,17 @@
 
 
 
-let users = [
-  {
-    name: "Suhail",
-    age: 21,
-    profession: "AI Engineer"
-  },
-  {
-    name: "Aisha",
-    age: 25,
-    profession: "Web Developer"
-  },
-  {
-    name: "Rahul",
-    age: 28,
-    profession: "Data Analyst"
-  },
-  {
-    name: "Zara",
-    age: 22,
-    profession: "Designer"
-  }
-];
-let sum = '';
-users.forEach(function(user){
-    sum+= `name:${user.name},age:${user.age},profession:${user.profession}\n`
+// events program
+const img = document.querySelector("img");
+let h2 = document.querySelector("h2");
+let body = document.querySelector("body");
+
+img.addEventListener("mouseenter", function () {
+  h2.innerHTML = "image is here now";
+  body.style.backgroundColor = "lightblue";
 });
-console.log(sum);
+
+img.addEventListener("mouseleave", function () {
+  h2.innerHTML = "image is gone now";
+  body.style.backgroundColor = "white"; // reset background
+});
