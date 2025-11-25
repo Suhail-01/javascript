@@ -283,14 +283,30 @@
 
 
 // adding or removing friend button program
-  var btn = document.querySelectorAll("button");
+//   var btn = document.querySelectorAll("button");
 
-btn.forEach(function(elem){
-  elem.addEventListener('click',function(dets){
-    if(elem.innerHTML==="Add Friend"){
-      elem.innerHTML="remove"
-    }else{
-      elem.innerHTML="Add Friend"
-    }
-  })
-})
+// btn.forEach(function(elem){
+//   elem.addEventListener('click',function(dets){
+//     if(elem.innerHTML==="Add Friend"){
+//       elem.innerHTML="remove"
+//     }else{
+//       elem.innerHTML="Add Friend"
+//     }
+//   })
+// })
+
+
+
+
+
+
+
+
+const ul = document.querySelector("ul");
+
+ul.addEventListener("click", (event) => {
+  // Check if the clicked element is an <li>
+  if (event.target.tagName.toLowerCase() === "li") {
+    event.target.classList.toggle("active");
+  }
+});
