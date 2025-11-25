@@ -249,20 +249,48 @@
 //   au.play();
 // })
 
-  const sounds = {
-    a: new Audio('./24.mp3'),
-    b: new Audio('./41.mp3'),
-    c: new Audio('./60.mp3')
-  };
 
-  const h1 = document.querySelector("h1");
 
-  // Listen for key press
-  h1.addEventListener("keydown", (event) => {
-    const key = event.key.toLowerCase();
 
-    if (sounds[key]) {
-      sounds[key].currentTime = 0; // restart sound
-      sounds[key].play();
+
+
+
+
+
+  // const sounds = {
+  //   a: new Audio('./24.mp3'),
+  //   b: new Audio('./41.mp3'),
+  //   c: new Audio('./60.mp3')
+  // };
+
+  // const h1 = document.querySelector("h1");
+
+  // // Listen for key press
+  // h1.addEventListener("keydown", (event) => {
+  //   const key = event.key.toLowerCase();
+
+  //   if (sounds[key]) {
+  //     sounds[key].currentTime = 0; // restart sound
+  //     sounds[key].play();
+  //   }
+  // });
+
+
+
+
+
+
+
+
+// adding or removing friend button program
+  var btn = document.querySelectorAll("button");
+
+btn.forEach(function(elem){
+  elem.addEventListener('click',function(dets){
+    if(elem.innerHTML==="Add Friend"){
+      elem.innerHTML="remove"
+    }else{
+      elem.innerHTML="Add Friend"
     }
-  });
+  })
+})
