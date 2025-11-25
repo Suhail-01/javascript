@@ -155,16 +155,88 @@
 
 
 // events program
-const img = document.querySelector("img");
-let h2 = document.querySelector("h2");
-let body = document.querySelector("body");
+// const img = document.querySelector("img");
+// let h2 = document.querySelector("h2");
+// let body = document.querySelector("body");
 
-img.addEventListener("mouseenter", function () {
-  h2.innerHTML = "image is here now";
-  body.style.backgroundColor = "lightblue";
-});
+// img.addEventListener("mouseenter", function () {
+//   h2.innerHTML = "image is here now";
+//   body.style.backgroundColor = "lightblue";
+// });
 
-img.addEventListener("mouseleave", function () {
-  h2.innerHTML = "image is gone now";
-  body.style.backgroundColor = "white"; // reset background
-});
+// img.addEventListener("mouseleave", function () {
+//   h2.innerHTML = "image is gone now";
+//   body.style.backgroundColor = "white"; // reset background
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// custom cursor program
+
+
+
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+//   font-family: 'helvetica neue';
+// }
+
+// html,
+// body {
+//   height: 100%;
+//   width: 100%;
+// }
+// body{
+//   cursor: none;
+// }
+// main {
+//   height: 100%;
+//   width: 100%;
+//   background-color: black;
+//   padding: 20px;
+//   display: flex;
+//   gap: 20px;
+//   align-items: flex-start;
+//   flex-wrap: wrap;
+// }
+// img{
+//     width: 40px;
+//     height: 40px;
+//     object-fit: cover;
+//     position: fixed;
+//     transform: translate(-50%,-50%);
+// }
+
+
+
+
+
+// const img = document.querySelector("img");
+
+// window.addEventListener("mousemove", function (event) {
+//   img.style.left = event.clientX + "px";
+//   img.style.top = event.clientY + "px";
+// });
