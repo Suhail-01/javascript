@@ -219,7 +219,7 @@
 //   padding: 20px;
 //   display: flex;
 //   gap: 20px;
-//   align-items: flex-start;
+//   align-items: flex-start; 
 //   flex-wrap: wrap;
 // }
 // img{
@@ -240,3 +240,12 @@
 //   img.style.left = event.clientX + "px";
 //   img.style.top = event.clientY + "px";
 // });
+
+
+
+document.body.addEventListener("keydown",function(dets){
+  console.log(dets.code);
+  var h1 = document.querySelector("h1");
+  h1.innerHTML = dets.code;
+  
+})
