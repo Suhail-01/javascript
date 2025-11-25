@@ -302,11 +302,18 @@
 
 
 
-const ul = document.querySelector("ul");
+// const ul = document.querySelector("ul");
 
-ul.addEventListener("click", (event) => {
-  // Check if the clicked element is an <li>
-  if (event.target.tagName.toLowerCase() === "li") {
-    event.target.classList.toggle("active");
-  }
-});
+// ul.addEventListener("click", (event) => {
+//   // Check if the clicked element is an <li>
+//   if (event.target.tagName.toLowerCase() === "li") {
+//     event.target.classList.toggle("active");
+//   }
+// });
+
+
+
+let sum =0;
+for(let i=1;i<=5;i++){
+    sum = sum + i;
+}
