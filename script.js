@@ -243,9 +243,26 @@
 
 
 
-document.body.addEventListener("keydown",function(dets){
-  console.log(dets.code);
-  var h1 = document.querySelector("h1");
-  h1.innerHTML = dets.code;
-  
-})
+// var au = new Audio("./24.mp3");
+// var h1 = document.querySelector("h1");
+// h1.addEventListener("keydown", function (dets){
+//   au.play();
+// })
+
+  const sounds = {
+    a: new Audio('./24.mp3'),
+    b: new Audio('./41.mp3'),
+    c: new Audio('./60.mp3')
+  };
+
+  const h1 = document.querySelector("h1");
+
+  // Listen for key press
+  h1.addEventListener("keydown", (event) => {
+    const key = event.key.toLowerCase();
+
+    if (sounds[key]) {
+      sounds[key].currentTime = 0; // restart sound
+      sounds[key].play();
+    }
+  });
