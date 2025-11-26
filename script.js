@@ -320,7 +320,7 @@
 
 
 
-
+// 
 var inp = document.querySelector("#inp");
 var count = document.querySelector("#count");
 inp.addEventListener("input", function (dets){
