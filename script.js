@@ -315,3 +315,20 @@
 
 
 
+
+
+
+
+
+
+var inp = document.querySelector("#inp");
+var count = document.querySelector("#count");
+inp.addEventListener("input", function (dets){
+  count.innerHTML = inp.value.length;
+  if(inp.value.length>=20){
+    count.style.color="red"
+    alert("you have reached the limit")
+  }else{
+    count.style.color="black"
+  }
+});
