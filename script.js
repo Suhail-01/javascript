@@ -358,14 +358,12 @@
 
 
 
-const para = document.querySelector("#para");
-const hide = document.querySelector("#hide");
-const show = document.querySelector("#show");
+const pic = document.querySelector("#pic");
 
-hide.addEventListener("click", function () {
-  para.style.display = "none";
+pic.addEventListener("mouseenter", function () {
+  pic.src = "https://picsum.photos/150?random=1";
 });
 
-show.addEventListener("click", function () {
-  para.style.display = "block";
+pic.addEventListener("mouseleave", function () {
+  pic.src = "https://via.placeholder.com/150";
 });
