@@ -339,18 +339,27 @@
 
 
 
-const add = document.querySelector("#add");
-const remove = document.querySelector("#remove");
-const container = document.querySelector("#container");
+// const add = document.querySelector("#add");
+// const remove = document.querySelector("#remove");
+// const container = document.querySelector("#container");
 
-add.addEventListener("click", function () {
-  let box = document.createElement("div");
-  box.classList.add("box");
-  container.appendChild(box);
-});
+// add.addEventListener("click", function () {
+//   let box = document.createElement("div");
+//   box.classList.add("box");
+//   container.appendChild(box);
+// });
 
-remove.addEventListener("click", function () {
-  if (container.lastChild) {
-    container.removeChild(container.lastChild);
-  }
+// remove.addEventListener("click", function () {
+//   if (container.lastChild) {
+//     container.removeChild(container.lastChild);
+//   }
+// });
+
+
+
+const h2 = document.querySelector("#title");
+const btn = document.querySelector("#btn");
+
+btn.addEventListener("click", function () {
+  h2.textContent = "Text Changed!";
 });
