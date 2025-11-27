@@ -339,21 +339,30 @@
 
 
 
-const add = document.querySelector("#add");
-const remove = document.querySelector("#remove");
-const container = document.querySelector("#container");
+// const add = document.querySelector("#add");
+// const remove = document.querySelector("#remove");
+// const container = document.querySelector("#container");
 
-add.addEventListener("click", function () {
-  let box = document.createElement("div");
-  box.classList.add("box");
-  container.appendChild(box);
+// add.addEventListener("click", function () {
+//   let box = document.createElement("div");
+//   box.classList.add("box");
+//   container.appendChild(box);
+// });
+
+// remove.addEventListener("click", function () {
+//   if (container.lastChild) {
+//     container.removeChild(container.lastChild);
+//   }
+// });
+
+
+
+const btn = document.querySelector("#btn");
+
+btn.addEventListener("click", function () {
+  let r = Math.floor(Math.random() * 256);
+  let g = Math.floor(Math.random() * 256);
+  let b = Math.floor(Math.random() * 256);
+
+  document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 });
-
-remove.addEventListener("click", function () {
-  if (container.lastChild) {
-    container.removeChild(container.lastChild);
-  }
-});
-
-
-
