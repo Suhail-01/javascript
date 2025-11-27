@@ -357,12 +357,12 @@
 
 
 
-const btn = document.querySelector("#btn");
+const pic = document.querySelector("#pic");
 
-btn.addEventListener("click", function () {
-  let r = Math.floor(Math.random() * 256);
-  let g = Math.floor(Math.random() * 256);
-  let b = Math.floor(Math.random() * 256);
+pic.addEventListener("mouseenter", function () {
+  pic.src = "https://picsum.photos/150?random=1";
+});
 
-  document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+pic.addEventListener("mouseleave", function () {
+  pic.src = "https://via.placeholder.com/150";
 });
