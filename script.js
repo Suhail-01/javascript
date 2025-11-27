@@ -357,9 +357,15 @@
 
 
 
-const input = document.querySelector("#input");
-const output = document.querySelector("#output");
+const btn = document.querySelector("#toggle");
+let dark = false;
 
-input.addEventListener("input", function () {
-  output.textContent = input.value;
+btn.addEventListener("click", function () {
+  if (dark) {
+    document.body.style.backgroundColor = "white";
+    dark = false;
+  } else {
+    document.body.style.backgroundColor = "black";
+    dark = true;
+  }
 });
