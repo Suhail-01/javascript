@@ -357,9 +357,17 @@
 
 
 
-const h2 = document.querySelector("#title");
-const btn = document.querySelector("#btn");
+const inp = document.querySelector("#inp");
+const count = document.querySelector("#count");
 
-btn.addEventListener("click", function () {
-  h2.textContent = "Text Changed!";
+inp.addEventListener("input", function () {
+  let length = inp.value.length;
+
+  count.textContent = `${length} / 20`;
+
+  if (length > 20) {
+    count.style.color = "red";
+  } else {
+    count.style.color = "lightgreen";
+  }
 });
