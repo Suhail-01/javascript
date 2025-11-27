@@ -357,14 +357,9 @@
 
 
 
-const para = document.querySelector("#para");
-const hide = document.querySelector("#hide");
-const show = document.querySelector("#show");
+const input = document.querySelector("#input");
+const output = document.querySelector("#output");
 
-hide.addEventListener("click", function () {
-  para.style.display = "none";
-});
-
-show.addEventListener("click", function () {
-  para.style.display = "block";
+input.addEventListener("input", function () {
+  output.textContent = input.value;
 });
